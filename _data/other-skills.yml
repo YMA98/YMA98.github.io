@@ -1,9 +1,9 @@
-- name: Adobe Photoshop
-  percentage: 95
+- name: Spring Boot
+  percentage: 90
   level: Expert
   color: info
 
-- name: Adobe Illustrator
+- name: React.js
   percentage: 90
   level: Expert
   color: success
