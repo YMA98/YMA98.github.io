@@ -1,0 +1,41 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "hconcat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Year Constructed",
+          "scale": {"domain": [1750, 2020]},
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": "average",
+          "field": "Square Footage",
+          "type": "quantitative"
+        }
+      },
+      "selection": {
+        "selector017": {"type": "interval", "encodings": ["x", "y"]}
+      },
+      "title": "Square Footage Data",
+      "transform": [{"filter": "(datum['Year Constructed'] > 1740)"}],
+      "width": 400
+    },
+    {
+      "mark": "arc",
+      "encoding": {
+        "color": {"field": "Usage Description", "type": "nominal"},
+        "theta": {"aggregate": "count", "type": "quantitative"}
+      },
+      "height": 200,
+      "title": "Building Status Data",
+      "transform": [{"filter": {"selection": "selector017"}}],
+      "width": 200
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json"
+}
