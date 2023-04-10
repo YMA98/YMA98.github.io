@@ -23,7 +23,7 @@ We firstly chose features ‘Year Constructed’ and ‘Square Footage‘ to sho
 
 # 2. More complex Data Transforms with the buildings dataset
 
-First, we draw a graph to show the relationship between Average Square Footage and Year Constructed and then linked to the Building Status Data which has a interactivity that you can get the building classification as time past:
+We draw a graph to show the relationship between Average Square Footage and Year Constructed and then linked to the Building Status Data which has a interactivity that you can get the building classification as time past:
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/building_inventory_1.json" style="width: 100%"></vegachart>
 
@@ -32,6 +32,6 @@ First, we draw a graph to show the relationship between Average Square Footage a
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/YMA98/YMA98.github.io/blob/main/ma-rocky-homework10.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/YMA98/YMA98.github.io/blob/main/python_notebooks/ma-rocky-homework10.ipynb" text="The Analysis" %}
 </div>
 
