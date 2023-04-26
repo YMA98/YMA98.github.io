@@ -34,7 +34,7 @@ We draw a graph to show the relationship between Average Square Footage and Year
 <vegachart schema-url="{{ site.baseurl }}/assets/json/building_inventory_1.json" style="width: 100%"></vegachart>
 
 <div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/YMA98/YMA98.github.io/blob/main/_data/la_crime_2023.csv" text="The Data" %}
 </div>
 
 <div class="right">
