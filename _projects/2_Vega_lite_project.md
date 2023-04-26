@@ -1,8 +1,8 @@
 ---
-name: Vega Lite Example Project
-tools: [Python, HTML, vega-lite]
-image: assets/pngs/cars.png
-description: This is a "showcase" project that uses vega-lite for interactive viz!
+name: Crime Analysis on Los Angeles City
+tools: [Python, HTML, Vega-lite, Altair]
+image: assets/pngs/la.png
+description: Using Python, Vega-lite and Altair to analyze and draw plots
 custom_js:
   - vega.min
   - vega-lite.min
@@ -10,37 +10,28 @@ custom_js:
   - justcharts
 ---
 
+# Introduction
 
-# Example including vega-lite
+Today, we'll be working through some more complex examples that use Python for data analysis and transformation, and vega-lite as the output engine to save to our Jekyll pages.
 
-Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
+# 1. Data transformations with the buildings dataset
 
-We can use a vegachart HTML tag like so:
+We firstly chose features ‘Year Constructed’ and ‘Square Footage‘ to show the relationship between the area and the constructed year:
 
-```
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
-```
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
-
-In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hooks/) to do it, but I haven't figured out a way that looks nice yet.
+<vegachart schema-url="{{ site.baseurl }}/assets/json/dash.json" style="width: 100%"></vegachart>
 
 
-## Search The Data & Methods
+# 2. More complex Data Transforms with the buildings dataset
 
-Below is where we can put some links to both the data and the analysis code as buttons:
+We draw a graph to show the relationship between Average Square Footage and Year Constructed and then linked to the Building Status Data which has a interactivity that you can get the building classification as time past:
 
-```
-<div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
-</div>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/building_inventory_1.json" style="width: 100%"></vegachart>
 
-<div class="right">
-{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
-</div>
-```
+# 3. More complex Data Transforms with the buildings dataset
 
-<!-- these are written in a combo of html and liquid --> 
+We draw a graph to show the relationship between Average Square Footage and Year Constructed and then linked to the Building Status Data which has a interactivity that you can get the building classification as time past:
+
+<vegachart schema-url="{{ site.baseurl }}/assets/json/building_inventory_1.json" style="width: 100%"></vegachart>
 
 <div class="left">
 {% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
