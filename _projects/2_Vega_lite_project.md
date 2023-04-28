@@ -9,7 +9,8 @@ custom_js:
   - vega-embed.min
   - justcharts
 ---
-# Exploring Crime in Los Angeles City - Group 12: Yifan Wang, Carol Lu, Rocky Ma
+#                             Exploring Crime in Los Angeles City
+### Group 12: Yifan Wang, Carol Lu, Rocky Ma
 
 ## Introduction
 
@@ -45,6 +46,7 @@ https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8
 
 NYPD Shooting Incident Data (Historic): NYC Open Data
 https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8
+
 
 <div class="left">
 {% include elements/button.html link="https://raw.githubusercontent.com/YMA98/YMA98.github.io/main/_data/la_crime_2023.csv" text="The Data" %}
