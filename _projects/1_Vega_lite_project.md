@@ -10,6 +10,7 @@ custom_js:
   - justcharts
 ---
 # Exploring Crime in Los Angeles City
+
 ### Group 12: Yifan Wang, Carol Lu, Rocky Ma
 
 ## Introduction
