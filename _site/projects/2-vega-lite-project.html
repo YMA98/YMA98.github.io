@@ -73,36 +73,51 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="introduction">Introduction</h1>
+  <h1 id="exploring-crime-in-los-angeles-city---group-12-yifan-wang-carol-lu-rocky-ma">Exploring Crime in Los Angeles City - Group 12: Yifan Wang, Carol Lu, Rocky Ma</h1>
 
-<p>Today, we’ll be working through some more complex examples that use Python for data analysis and transformation, and vega-lite as the output engine to save to our Jekyll pages.</p>
+<h2 id="introduction">Introduction</h2>
 
-<h1 id="1-data-transformations-with-the-buildings-dataset">1. Data transformations with the buildings dataset</h1>
+<p>Crime is a significant issue that affects communities worldwide, and the city of Los Angeles is no exception. According to the Los Angeles Police Department (LAPD), there were over 210,000 reported crimes in the city in 2020 alone, ranging from theft and robbery to assault and homicide. The impact of crime on communities is far-reaching, from personal trauma to economic costs, and it is crucial to understand its distribution and trends to address it effectively.</p>
 
-<p>We firstly chose features ‘Year Constructed’ and ‘Square Footage‘ to show the relationship between the area and the constructed year:</p>
+<p>To this end, our team has undertaken a data visualization project on crime in Los Angeles City, utilizing a dataset representing the incidents of crime in the city dating back to 2020. To make the data more manageable, we narrowed our focus to the years 2023 and beyond, reducing the number of rows from 700,000 to 60,000. Through our project, we aim to provide insights into the distribution and patterns of crime in LA City, allowing for better decision-making and policy implementation.</p>
+
+<h2 id="dashboard">Dashboard</h2>
+
+<p>Our dashboard comprises two main components: the left section showcases a plot that displays the age, descent, and sex of victims population, while the right section presents the count of criminal records grouped by area names of the city.</p>
+
+<p>The left section of the dashboard focuses on the demographics of crime victims, providing an insight into who is most vulnerable to crime with different colors representing different demographic groups. By selecting a particular area, users can view the specific number of criminal records connected to the selected victim group, and distributions in different areas. This interactivity makes it easier to compare the demographics of victims in different ages, descent, gender between different regions of the city.</p>
 
 <vegachart schema-url="/assets/json/dash.json" style="width: 100%"></vegachart>
 
-<h1 id="2-more-complex-data-transforms-with-the-buildings-dataset">2. More complex Data Transforms with the buildings dataset</h1>
+<h2 id="contextual-data-analysis">Contextual Data Analysis</h2>
 
-<p>We draw a graph to show the relationship between Average Square Footage and Year Constructed and then linked to the Building Status Data which has a interactivity that you can get the building classification as time past:</p>
+<p>This dataset contains information on all shooting incidents that have taken place in New York City from 2006 until the end of the previous calendar year. The data is collected quarterly and reviewed by the Office of Management Analysis and Planning before being made available on the NYPD website. Each record in the dataset represents a specific shooting incident and includes details about when and where it occurred. It also includes information about the demographics of both the victim and the suspect. This dataset can be used by the public to gain insights into patterns and trends related to criminal activity involving firearms.</p>
 
-<vegachart schema-url="/assets/json/building_inventory_1.json" style="width: 100%"></vegachart>
+<p>We have two plots below. The first one is also interactive and contains two parts. The heat map shows the relationship between victims and perpetrators and categorize them in different race. When you click the square, it show the area of the incidents happening. The second one shows the number of shootings from 2006 to 2022 by areas in New York City.</p>
 
-<h1 id="3-more-complex-data-transforms-with-the-buildings-dataset">3. More complex Data Transforms with the buildings dataset</h1>
+<vegachart schema-url="/assets/json/nyc_dash.json" style="width: 100%"></vegachart>
 
-<p>We draw a graph to show the relationship between Average Square Footage and Year Constructed and then linked to the Building Status Data which has a interactivity that you can get the building classification as time past:</p>
+<vegachart schema-url="/assets/json/nyc_year_chart.json" style="width: 100%"></vegachart>
 
-<vegachart schema-url="/assets/json/building_inventory_1.json" style="width: 100%"></vegachart>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>When people are thinking where to live, safety is usually considered to be one of the most important factors. So, we found out a way to evaluate whether a city is dangerous or not through crime data. We chose LA city data as an example to make an interactive visualization plot showing the crime situation of the city. The result showed many useful information and let us learn the importance of data visualization in real world.</p>
+
+<h2 id="citation">Citation</h2>
+<p>Crime Data from 2020 to Present: Los Angeles - Open Data Portal
+https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8</p>
+
+<p>NYPD Shooting Incident Data (Historic): NYC Open Data
+https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8</p>
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/vega/vega/blob/main/docs/data/cars.json">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/YMA98/YMA98.github.io/main/_data/la_crime_2023.csv">
   The Data
 </a>
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/Final_Proj_part2.ipynb">
   The Analysis
 </a>
 </div>
