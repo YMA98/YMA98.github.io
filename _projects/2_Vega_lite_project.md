@@ -9,7 +9,7 @@ custom_js:
   - vega-embed.min
   - justcharts
 ---
-#                             Exploring Crime in Los Angeles City
+# Exploring Crime in Los Angeles City
 ### Group 12: Yifan Wang, Carol Lu, Rocky Ma
 
 ## Introduction
@@ -53,6 +53,6 @@ https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/Final_Proj_part2.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/YMA98/YMA98.github.io/blob/main/python_notebooks/Final_Proj_part2.ipynb" text="The Analysis" %}
 </div>
 
